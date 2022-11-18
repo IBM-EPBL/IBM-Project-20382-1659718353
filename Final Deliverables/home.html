@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="cards">
+        <article class="card">
+            <header>
+                <h2>Army Recruitment</h2>
+            </header>    
+            <img src="army.jpg" >
+            <div class="content">
+                <p> The recruitment process for the Indian army has been announced, Eligible candidates can participate. </p>
+            </div>
+                
+        </article>
+                
+         <article class="card">
+            <header>
+                <h2>Virus Awareness</h2>
+            </header>    
+            <img src="virus.jpg" >
+            <div class="content">
+                <p>the rapid increase in the virus has brought various effects, the public have been warned to wear their mask properly.</p>
+            </div>
+            
+        </article>
+                
+        <article class="card">
+            <header>
+                <h2>England to lift the T20 World cup</h2>
+            </header>
+            <img src="match.jpg">
+            <div class="content">
+                <p>England bashes their victory to lift the t20 world cup against Paksitan.</p>
+            </div>
+                   </article>
+        <article class="card">
+            <header>
+                <h2>Politics</h2>
+            </header>
+            <img src="parliment.jpg" >
+            <div class="content">
+                <p> India is a parliamentary democratic secular republic in which the president of India
+                     is the head of state & first citizen of India and the prime minister of India is the head of government. 
+                     It is based on the federal structure of government. </p>
+            </div>
+            <script>
+                window.watsonAssistantChatOptions = {
+                  integrationID: "d7acbf05-5f3b-4e39-8e1e-5be1a59180cf", // The ID of this integration.
+                  region: "au-syd", // The region your integration is hosted in.
+                  serviceInstanceID: "15532175-88b1-48f3-aba9-6bb561d10dc5", // The ID of your service instance.
+                  onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                  const t=document.createElement('script');
+                  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+                  document.head.appendChild(t);
+                });
+              </script>
+    
+        </article>
+    </div>
+</body>
+
+</html>
